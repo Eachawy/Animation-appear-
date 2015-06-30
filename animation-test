@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    
+</head>
+
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+    <div class="col-sm-6 pull-right animated hiding " data-animation="fadeInRight">
+    	Eachawy <br>
+    	Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>    
+    </div>
+    
+    <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+    	Eachawy <br>
+    	Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+        Eachawy <br>
+    </div>
+            
+		<a href="register.html#mainreg" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">REGISTER AS LEARNER</a>
+		<a href="register.html#plan" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">REGISTER AS TEACHER</a>
+                          
+<br><br><br><br><br><br><br><br>
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+<script type="text/javascript">
+(function(){
+		$('.animated').appear(function() {
+		  var element = $(this);
+		  var animation = element.data('animation');
+		  var animationDelay = element.data('delay');
+		  if(animationDelay) {
+			  setTimeout(function(){
+				  element.addClass( animation + " visible" );
+				  element.removeClass('hiding');
+			  }, animationDelay);
+		  } else {
+			  element.addClass( animation + " visible" );
+			  element.removeClass('hiding');
+		  }               
+
+		}, {accY: -150});
+})();
+</script>
+    
+    
+
+
+</body>
+</html>
